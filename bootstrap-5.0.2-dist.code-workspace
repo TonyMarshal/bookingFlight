@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "javascript",
+			"path": "."
+		},
+		{
+			"name": "bootstrap-5.0.2-dist",
+			"path": "../../Downloads/bootstrap-5.0.2-dist"
+		}
+	],
+	"settings": {}
+}

@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url(images/background1.jpg);
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+
+nav {
+    width: 88%;
+    margin: auto;
+    padding: 10px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0 10px;
+}
+
+nav ul li a:hover {
+  color: blue;
+}
+
+.logo {
+    color: blue;
+}
+
+.section {
+    margin: 80px 410px;
+}
+
+.write-up h1 {
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.icon {
+    font-size: 30px;
+    color: #161616;
+    cursor: pointer;
+    display: none;
+}
+
+.cans {
+display: none;
+}
+
+.Nom {
+    background-color: black;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 120vh;
+    min-height: 120vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.contact-us {
+    margin: 1%;
+}
+
+.Con {
+    padding: 50px 30px 40px 20px;
+    color: pink;
+}
+
+.input-2 {
+    margin-right: 50%;
+}
+
+.incor {
+    position: relative;
+    width: 40em;
+    height: 30px;
+    display: flex;
+    margin-left: 1.5%;
+
+}
+
+.incor input:nth-of-type(1){
+    margin-right: 20px;
+}
+
+.incor input:nth-of-type(2){
+    margin-left: 20px;
+}
+
+.area {
+    margin-left: 1.5%;
+    margin-top: 2.5%;
+}
+
+#area{
+    width: 600px;
+    height: 250px;
+}
+
+.Send {
+    margin-left: 20px;
+    margin-top: 10px;
+    width: 6.5%;
+    height: 2.0em;
+    border-radius:0.40em;
+    cursor:pointer;
+    border: 1px solid white;
+}

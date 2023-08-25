@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking flight</title>
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome-free-6.2.0-web/css/all.css">
+    <link rel="stylesheet" href="fontawesome-free-6.2.0-web/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <h1>MKG Flights</h1>
+            </div>
+            <div class="icon" id="menu-icon">
+                <i class="fa-solid fa-bars" onclick="togglemenu()"></i>
+            </div>
+            <ul class="mList" id="nav">
+                <div class="cans" onclick="togglemenu()">
+                    x
+                </div>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="time">
+            <h1 id="current-time">12:00:00</h1>
+        </div>
+    </div>
+    <div class="plans">
+        <div class="travel">
+            <h1><span id="in"></span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et iusto magni exercitationem incidunt provident iste esse delectus, cumque amet quas animi praesentium deleniti. Magni aliquam dolores ab ipsam, nisi eos!0</p>
+            <div>
+                <a href="booking.html"><button class="button-btn"><span>Book Here</span></button></a>
+            </div>
+        </div>
+        <div class="tours" >
+            <div class="places" id="place-1" data-name="show">
+                <h2>Australia</h2>
+                <img src="images/Australia.jpg" draggable="false">
+                <br>
+                <br>
+                <a  href="booking.html">Book Now 15% off</a>
+            </div>
+            <div class="places" id="place-2" data-name="left">
+                <h2>New York</h2>
+                <img src="images/new york.jpg" draggable="false">
+                <br>
+                <br>
+                <a href="booking.html">Book Now 20% off</a>
+            </div>
+            <div class="places" id="place-3" data-name="right">
+                <h2>Monaco</h2>
+                <img src="images/monaco.jpg" draggable="false">
+                <br>
+                <br>
+                <a href="booking.html">Book Now 20% off</a>
+            </div>
+        </div>
+    </div>
+    <section>
+        <div class="container-about">
+            <h1 class="title">ABOUT ME</h1>
+            <div class="about-content">
+                <div class="image">
+                    <img src="images/monaco.jpg">
+                </div>
+                <div class="content">
+                    <p>MKG flight gives you the access to book flight ticket from any flight comany around the global. it will be easy for the customer because of rush online. All companies flight phatform is available on MkG flight booking company.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="foot">
+        <div class="footer-bottom">
+            <h1>MKG Flight Ticket Booking Company.</h1>
+            <ul class="socials">
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+            </ul>
+            <p>copyright &copy;2023 MKG Flights. Designed by <span>TTechnology</span></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <script type="text/javascript" src="./index.js"></script>
+
+</body>
+</html>
+
