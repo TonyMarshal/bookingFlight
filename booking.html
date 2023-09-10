@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>book here</title>
     <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome-free-6.2.0-web/css/all.css">
+    <link rel="stylesheet" href="fontawesome-free-6.2.0-web/css/all.min.css">
     <link rel="stylesheet" href="booking.css">
 </head>
 <body>
@@ -14,9 +16,16 @@
             <div class="logo">
                 <h1>MKG Flights</h1>
             </div>
-            <ul>
+            <div class="icon" id="menu-icon">
+                <i class="fa-solid fa-bars" onclick="togglemenu()"></i>
+            </div>
+            <ul class="mList" id="nav">
+                <div class="cans" onclick="togglemenu()">
+                    x
+                </div>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="">About</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </div>
@@ -59,5 +68,20 @@
             </div>
         </div>
     </div>
+    <script src="booking.js">
+        let  navMenu = document.getElementById('nav');
+        let  menu1 = document.getElementById('menu-icon');
+
+
+    function togglemenu() {
+        if (navMenu.className == "mList") {
+            navMenu.className = "menu";
+
+
+        }else{
+            navMenu.className = "mList";
+    }
+}
+    </script>
 </body>
 </html>

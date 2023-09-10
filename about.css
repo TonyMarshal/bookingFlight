@@ -35,3 +35,7 @@ nav ul li a:hover {
 .logo {
     color: blue;
 }
+
+.cans {
+    display: none;
+}

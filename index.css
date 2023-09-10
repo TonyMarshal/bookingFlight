@@ -373,7 +373,7 @@ footer h1 {
     .cans {
         position: absolute;
         top: 0rem;
-        right: 1.2rem;
+        left: 0.8rem;
         display: block;
         cursor: pointer;
         font-size: 25px;
@@ -587,6 +587,278 @@ footer h1 {
         color: lightgreen;
     }
 
+
+}
+
+@media (max-width: 393px) {
+    .container {
+        padding: 0 30px;
+    }
+
+    .icon {
+        display: block;
+    }
+
+     body {
+        background-attachment: fixed;
+     }
+
+    nav {
+        position: relative;
+        padding: 5px 0px;
+        z-index: 2;
+    }
+
+    .menu {
+        position: fixed;
+        right: -10px;
+        top: 0px;
+        background-color: lightgray;
+        width: 50%;
+        box-shadow: 0 1px 16px hsla(210, 74%, 62%, 0.1);
+        padding: 3.5rem 2rem;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        row-gap: 1.5rem;
+        transition: top 0.1s;
+        align-items: center;
+        animation: tone 2s 1;
+        /* display: none; */
+    }
+
+    @keyframes tone {
+        from {
+            max-width: 30%;
+        }
+        to{
+            max-width: 100%;
+        }
+    }
+
+    .menu li a {
+        display: flex;
+        font-size: 1.3rem;
+        padding: 10px 100px;
+        flex-direction: column;
+        text-align: center;
+        row-gap: 2rem;
+    }
+
+    .cans {
+        position: absolute;
+        top: 0rem;
+        left: 0.8rem;
+        display: block;
+        cursor: pointer;
+        font-size: 25px;
+    }
+
+    nav ul{
+        display: none;
+    }
+
+    nav ul.mList {
+        display: none;
+    }
+
+    .plans{
+        display: block;
+    }
+
+    .plans div:nth-of-type(1){
+        width: 100%;
+        margin-top: 12%;
+    }
+
+    .button-btn {
+        margin-top: -100%;
+    }
+
+    #in {
+        font-size: 35px;
+    }
+
+    .travel p {
+        font-size: 18px;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+    }
+
+    .tours {
+        display: inline-block;
+        margin: 1rem 3.5rem;
+    }
+
+    .places {
+        display: inline-block;
+        text-align: center;
+        border-radius: 12px;
+        
+    }
+    
+    .places h2 {
+        color: red;
+        font-size: 35px;
+        letter-spacing: 3px;
+        border-radius: 1px;
+        padding: 30px 30px;
+        background-color: #000;
+        margin-top: 10%;
+    }
+
+    .places a {
+        text-decoration: none;
+        color: red;
+        font-weight: bold;
+        font-size: 12px;
+        border-radius: 12px;
+        background-color: #fff;
+        padding: 12px 30px;
+        margin-left: 1.5rem;
+        
+    }
+
+    .places img {
+        width: 100%;
+    }
+
+    #in {
+        color: blue;
+    }
+    
+    /*.time h1{
+        position: absolute;
+        right: -55%;
+        transform: translate(-50%, -50%);
+        margin-top: 92rem;
+        font-size: 30px;
+        font-weight: 600;
+        letter-spacing: 3px;
+        color: blue;
+        cursor: pointer;
+    }
+    
+    .time:hover h1 {
+        color: red;
+        transition: 1s;
+    }*/
+
+    .tours>div {
+        opacity: 0;
+        /* position: absolute; */
+    }
+
+    div.show {
+        animation: show 1s ease-in-out 1  forwards;
+        transform: translateY(-90%);
+    }
+
+    
+    @keyframes show {
+        from {
+            transform: translateY(190px);
+            opacity: 0;
+        }to{
+            transform: translateY(0);
+            opacity: 1;
+           
+        }
+    }
+
+    div.left {
+        animation: left 1s ease-in-out 1  forwards;
+    }
+
+    @keyframes left {
+        from {
+            transform:translateX(40%);
+            opacity: 0;
+        }to{
+            transform: translateX(0);
+            opacity: 1;
+            
+        }
+    }
+
+    div.right {
+        animation: right 1s ease-in-out 1 forwards;
+    }
+
+    @keyframes right {
+        from {
+            transform: translateX(-10%);
+            opacity: 0;
+        }to{
+            transform: translateX(5%);
+            opacity: 1;
+        }
+    }
+
+
+    div.places:nth-of-type(3) {
+        top: -100%;
+    }
+
+    footer {
+        position: relative;
+        margin-top: 70rem;
+        background-color: #000;
+        width: 100w;
+        padding: 10px 0;
+        text-align: center;
+        height: 148px;
+    }
+    
+    footer h1 {
+        font-size: 18px;
+        color: white;
+        margin: 2rem 1rem 1rem 0;
+    }
+    
+    .footer-bottom {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .footer-bottom p {
+        font-size: 13px;
+        word-spacing: 2px;
+        text-transform: capitalize;
+        color: white;
+        margin-bottom: 20rem;
+    }
+    
+    .footer-bottom span {
+        text-transform: uppercase;
+        opacity: .4;
+        font-weight: 200;
+    }
+    
+    .socials {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem 3rem 1rem 0;
+    }
+    
+    .socials li {
+        margin: 0 10px;
+    }
+    
+    .socials a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .socials a i {
+        font-size: 1.1rem;
+        transition: color .4s ease;
+    }
+    
+    .socials a:hover {
+        color: lightgreen;
+    }
 
 }
 
